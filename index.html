@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="main.js" defer></script>
+    <title>Snake</title>
+</head>
+
+<body>
+    <main class="content">
+        <section class="game">
+            <!-- GAME INITIALIZATION -->
+            <div class="gameStartInit">
+                <div class="gameStartInit__dimension">
+                    <button class="gameStartInit__btn gameStartInit__btn--minus"></button>
+                    <p class="gameStartInit__value">14 x 14</p>
+                    <button class="gameStartInit__btn gameStartInit__btn--plus"></button>
+                </div>
+                <div class="gameStartInit__snake-preview">
+                    <div class="initBox">
+                    </div>
+                    <div class="initBox">
+                    </div>
+                    <div class="initBox fill-snake">
+                    </div>
+                    <div class="initBox fill-snake">
+                    </div>
+                    <div class="initBox fill-head">
+                    </div>
+                    <div class="initBox fill-snake">
+                    </div>
+                    <div class="initBox fill-snake">
+                    </div>
+                    <div class="initBox fill-snake">
+                    </div>
+                    <div class="initBox">
+                    </div>
+                    <div class="initBox">
+                    </div>
+                </div>
+                <div class="gameStartInit__colors">
+                    <div class="gameStartInit__color gameStartInit__color--color1 color-chosen"></div>
+                    <div class="gameStartInit__color gameStartInit__color--color2"></div>
+                    <div class="gameStartInit__color gameStartInit__color--color3"></div>
+                    <div class="gameStartInit__color  gameStartInit__color--color4"></div>
+                    <div class="gameStartInit__color gameStartInit__color--color5"></div>
+                </div>
+                <button class="gameStartInit__btnStart">Start Game</button>
+            </div>
+            <!-- GAME OVER TEXT -->
+            <div class="game-over__text game-over-hidden">
+                GAME OVER!
+            </div>
+            <!-- NEW RECORD -->
+            <div class="game__new-record">
+                <div class="game__new-record__firework hidden-visibility">
+                    <img src="img/firework.gif" alt="">
+                </div>
+                <p class="game__new-record__text hidden-visibility">
+                    NEW RECORD!
+                </p>
+                <div class="game__new-record__firework hidden-visibility">
+                    <img src="img/firework.gif" alt="">
+                </div>
+            </div>
+            <!-- PLAYGROUND -->
+            <div class="playground">
+                <div class="backdrop hidden">
+                    <p class="backdrop__text text-hidden">PAUSE</p>
+                </div>
+            </div>
+            <!-- GAME OVER FORM -->
+            <!-- <div class="game-over hidden"> -->
+            <div class="game-over hidden">
+                <form action="" id="game-over__form">
+                    <input type="text" minlength="3" maxlength="11" placeholder="Your Name" required>
+                    <button class="game-over__btn">Submit Score</button>
+                </form>
+            </div>
+            <!-- NEW GAME -->
+            <div class="new-game new-game-hidden">
+                <button class="new-game__btn ">New game</button>
+            </div>
+        </section>
+        <section class="menu">
+            <!-- <p class="menu__title">SNAKE</p> -->
+            <div class="menu__score">
+                <!-- <p class="score__text">Score: <span class="score__value">0</span></p> -->
+                <p class="menu__score__text">Score</p>
+                <p class="menu__score__value">0</p>
+            </div>
+            <div class="menu__gauge">
+                <button class="menu__gauge__btn menu__gauge__btn--minus">-</button>
+                <div class="menu__gauge--img">
+                    <img src="img/gauge.png" alt="Gauge picture">
+                    <div class="menu__gauge--hand"></div>
+                </div>
+                <button class="menu__gauge__btn menu__gauge__btn--plus">+</button>
+            </div>
+        </section>
+        <section class="highscores">
+            <!-- <p class="highscores__title">Top 5 scores</p> -->
+            <div class="highscores__podium">
+                <img src="img/leaderboard.png" alt="Podium Image">
+            </div>
+            <div class="highscores__table">
+                <div class="highscores__row">
+                    <div class="highscores__row__id"></div>
+                    <div class="highscores__row__name"></div>
+                    <div class="highscores__row__score"></div>
+                </div>
+                <div class="highscores__row">
+                    <div class="highscores__row__id"></div>
+                    <div class="highscores__row__name"></div>
+                    <div class="highscores__row__score"></div>
+                </div>
+                <div class="highscores__row">
+                    <div class="highscores__row__id"></div>
+                    <div class="highscores__row__name"></div>
+                    <div class="highscores__row__score"></div>
+                </div>
+                <div class="highscores__row">
+                    <div class="highscores__row__id"></div>
+                    <div class="highscores__row__name"></div>
+                    <div class="highscores__row__score"></div>
+                </div>
+                <div class="highscores__row">
+                    <div class="highscores__row__id"></div>
+                    <div class="highscores__row__name"></div>
+                    <div class="highscores__row__score"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
